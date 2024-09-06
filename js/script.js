@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
         const endY = e.changedTouches[0].clientY;
         const deltaY = startY - endY;
 
-        if( Math.abs(deltaY) > 50 ) {
+        if( Math.abs(deltaY) > 20 ) {
             if( deltaY > 0)         page++;
             else if( deltaY < 0 )   page--;  
 
@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
             else if (page > last)   page = last; //3
 
             layout.style.top = page * (-100) + "vh";// -100vh;
+            console.log( deltaY );
         }
     } , {passive: false});
 
