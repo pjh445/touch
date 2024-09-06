@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+* {
+    margin:0; padding:0; box-sizing: border-box;
+}
+
+html {
+    height:100%; 
+}
+body {
+    height:100%; overflow: hidden;  /* 스크롤바안생김. 아래로 못내려감 */
+}
+#layout {
+    position: relative; top:0;    height:100%; /*윈도높이*/
+    transition: all 0.5s;
+}
+#layout > section {
+    height:100%;
+}
+#layout > section:nth-of-type(1) {background: yellowgreen;}
+#layout > section:nth-of-type(2) {background: pink;}
+#layout > section:nth-of-type(3) {background: yellow;}
+#layout > section:nth-of-type(4) {background: orange;}
