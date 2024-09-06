@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
             if(page < 0 )           page = 0;
             else if (page > last)   page = last; //3
 
-            layout.style.top = page * (-100) + "vh";// -100vh;
+            layout.style.top = page * (-100) + "dvh";// -100dvh;
             console.log( deltaY );
         }
     } , {passive: false});
